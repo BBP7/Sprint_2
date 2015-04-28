@@ -199,14 +199,13 @@ def on_identify(message):
     print 'identify' + message
     users[session['uuid']]={'username':message}
     updateRoster()
-    
-    
+
 @socketio.on('login', namespace='/chat')
 def on_login(pw):
     
     updateRoster()
     
-#    if pw or users[session['uuid']]['username'] == "":
+#    if pw or users[session['uuid']]['username'] == "" or  null string:
         
     conn = connectToDB()
     cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
