@@ -159,7 +159,6 @@ def new_message(message):
         except:
             print("INSERT MESSAGE FAIL")
 
-            
 @socketio.on('search', namespace='/chat')
 def new_search(search):
     
