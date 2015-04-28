@@ -131,8 +131,7 @@ def move_Room(chatRoom):
                  
             for message in messages:
                 emit('message', message)
-        
-        
+
         except:
             print("ERROR SELECTING MESSAGES")
 
