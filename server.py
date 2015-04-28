@@ -291,7 +291,6 @@ def on_disconnect():
 def hello_world():
     print 'in hello world'
     return app.send_static_file('index.html')
-    return 'Hello World!'
 
 @app.route('/js/<path:path>')
 def static_proxy_js(path):
