@@ -143,7 +143,6 @@ def new_message(message):
         cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
         
         try:
-            #tmp = {'text':message, 'name':'testName'}
             tmp = {'text':message, 'name':users[session['uuid']]['username']}
             
             if currentRoom == "Movies":
