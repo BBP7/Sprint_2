@@ -1,11 +1,10 @@
 import os
 import uuid
-import psycopg2
-import psycopg2.extras
 from flask import Flask, session, render_template, request
 from flask.ext.socketio import SocketIO,emit
-#from flask import Flask, render_temate
-#from flask.ext.socketio import SocketIO, emit
+import psycopg2
+import psycopg2.extras
+
 
 app = Flask(__name__, static_url_path='')
 app.config['SECRET_KEY'] = 'secret!'
