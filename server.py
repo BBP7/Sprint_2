@@ -10,12 +10,13 @@ app.config['SECRET_KEY'] = 'secret!'
 
 socketio = SocketIO(app)
 
+global currentRoom 
+global subList 
+
 messages = [{'text':'test', 'name':'testName'}]
 searchMsg = [{'text':'test', 'name':'testName'}]
 rooms = ["Movies", "Sports", "TV Shows"]
 users = {}
-global currentRoom 
-global subList 
 
 def connectToDB():
   connectionString = 'dbname=mydata user=postgres password=Phoenix host=localhost'
