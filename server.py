@@ -5,7 +5,6 @@ from flask.ext.socketio import SocketIO,emit
 import psycopg2
 import psycopg2.extras
 
-
 app = Flask(__name__, static_url_path='')
 app.config['SECRET_KEY'] = 'secret!'
 
