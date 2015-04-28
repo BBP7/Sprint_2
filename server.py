@@ -223,7 +223,7 @@ def on_login(pw):
     
     if results == []:
         emit('login')
-        #emit(registered,users[session['uuid']]['username'])
+        
     elif results!=[]:
         emit('run')
         conn = connectToDB()
