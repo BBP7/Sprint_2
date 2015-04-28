@@ -283,8 +283,6 @@ def on_login(pw):
         
         except:
             print("ERROR SELECTING MESSAGES")
-    #users[session['uuid']]={'username':message}
-    #updateRoster()
 
 @socketio.on('disconnect', namespace='/chat')
 def on_disconnect():
