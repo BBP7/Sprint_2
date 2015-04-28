@@ -160,8 +160,6 @@ def new_message(message):
 
 @socketio.on('search', namespace='/chat')
 def new_search(search):
-    
- 
     if search!='':
         conn = connectToDB()
         cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
